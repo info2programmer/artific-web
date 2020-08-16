@@ -8,12 +8,12 @@
     <div class="nav-inner-wrap">
         <nav class="nav-inner sound-nav" id="menu">
             <ul>
-                <li><a href="index.html" class="act-link">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="team.html">Team</a></li>
+                <li><a href="<?php echo base_url() ?>" class="act-link">Home</a></li>
+                <li><a href="<?php echo base_url() ?>portfolio.html">Portfolio</a></li>
+                <li><a href="<?php echo base_url() ?>team.html">Team</a></li>
                 <!--<li><a href="products.html">Products</a></li>-->
-                <!--<li><a href="blog.html">Blog</a></li>-->
-                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="<?php echo base_url() ?>blogs.html">Blog</a></li>
+                <li><a href="<?php echo base_url() ?>contacts.html">Contacts</a></li>
             </ul>
         </nav>
     </div>

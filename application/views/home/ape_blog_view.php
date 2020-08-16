@@ -195,7 +195,7 @@
                                     <div class="limit-box fl-wrap"></div>
                                 </div>
                                 <!-- content-nav -->
-                                <div class="content-nav">
+                                <!-- <div class="content-nav">
                                     <ul>
                                         <li><a href="blog.html" class="ln"><i class="fal fa-arrow-left"></i><span class="tooltip">Prev - page 1</span></a></li>
                                         <li>
@@ -203,7 +203,7 @@
                                         </li>
                                         <li><a href="blog.html" class="rn"><i class="fal fa-arrow-right"></i><span class="tooltip">Next - page 2 </span></a></li>
                                     </ul>
-                                </div>
+                                </div> -->
                                 <!-- content-nav end-->     
                             </div>
                             <!-- blog-container end    -->

@@ -56,7 +56,8 @@ $route['index'] = 'home/index';
 $route['contacts'] = 'home/contact';
 $route['team'] = 'home/team';
 $route['portfolio'] = 'home/portfolio';
-$route['blog'] = 'home/blog';
+$route['blogs'] = 'home/blog';
+$route['blog/(:num)/(:any)'] = 'home/blogDetails/$1/$1/';
 $route['portfolio/(:num)/(:any)'] = 'home/potfolioDetails/$1/$1/';
 
 // $route['blog']='welcome/blog';
