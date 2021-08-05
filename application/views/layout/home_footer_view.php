@@ -103,6 +103,7 @@
 <script type="text/javascript" src="<?php echo base_url() ?>assets/ape/js/jquery.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url() ?>assets/ape/js/plugins.js"></script>
 <script type="text/javascript" src="<?php echo base_url() ?>assets/ape/js/scripts.js"></script>
+
 </body>
 
 </html>

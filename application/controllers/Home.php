@@ -103,23 +103,46 @@ class home extends CI_Controller
         $subject = $this->input->post('txtSubject');
         $message = $this->input->post('txtMessage');
 
-        $mailBody = '';
-        $mailBody .= '<strong>Name : </strong>';
-        $mailBody .= $name . "<br/>";
-        $mailBody .= '<strong>Email : </strong>';
-        $mailBody .= $email . "<br/>";
-        $mailBody .= '<strong>Phone : </strong>';
-        $mailBody .= $phone . "<br/>";
-        $mailBody .= '<strong>Subject : </strong>';
-        $mailBody .= $subject . "<br/>";
-        $mailBody .= '<strong>Message : </strong>';
-        $mailBody .= $message . "<br/>";
+        // $recaptchaResponse = trim($this->input->post('g-recaptcha-response'));
+        // $userIp=$this->input->ip_address();
+        $secret='6LeXOOAbAAAAALP6hjkaqVSVt8_d1lhxsBnHaPov';
 
-        $this->common_model->send_smtpmail('sreejit.personal@gmail.com', 'Contact enquery from artific website', $mailBody);
-        $this->common_model->send_smtpmail('info2programmer@gmail.com', 'Contact enquery from artific website', $mailBody);
+        $credential = array(
+            'secret' => $secret,
+            'response' => $this->input->post('g-recaptcha-response')
+        );
+ 
+        $verify = curl_init();
+        curl_setopt($verify, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
+        curl_setopt($verify, CURLOPT_POST, true);
+        curl_setopt($verify, CURLOPT_POSTFIELDS, http_build_query($credential));
+        curl_setopt($verify, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($verify, CURLOPT_RETURNTRANSFER, true);
+        $response = curl_exec($verify);
+    
+        $status= json_decode($response, true);
 
-        $this->session->set_flashdata('succss_log', 'Message Send Successfully');
+        if($status['success']){ 
+            $mailBody = '';
+            $mailBody .= '<strong>Name : </strong>';
+            $mailBody .= $name . "<br/>";
+            $mailBody .= '<strong>Email : </strong>';
+            $mailBody .= $email . "<br/>";
+            $mailBody .= '<strong>Phone : </strong>';
+            $mailBody .= $phone . "<br/>";
+            $mailBody .= '<strong>Subject : </strong>';
+            $mailBody .= $subject . "<br/>";
+            $mailBody .= '<strong>Message : </strong>';
+            $mailBody .= $message . "<br/>";
 
+            $this->common_model->send_smtpmail('sreejit.personal@gmail.com', 'Contact enquery from artific website', $mailBody);
+            $this->common_model->send_smtpmail('info2programmer@gmail.com', 'Contact enquery from artific website', $mailBody);
+
+            $this->session->set_flashdata('succss_log', 'Message Send Successfully');
+        }
+        else{
+            $this->session->set_flashdata('succss_log', 'Capcha Validation Faild Please Try Again');
+        }
         redirect('contacts');
     }
 

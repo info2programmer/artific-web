@@ -114,6 +114,9 @@
                         </div>
                       </div>
                       <textarea name="txtMessage" id="comments" cols="40" rows="3" placeholder="Your Message:" required></textarea>
+                      <div class="col-md-12">
+                      <div class="g-recaptcha" data-sitekey="6LeXOOAbAAAAAO_rwutDmep-mMHrf6QJq1bC7Vdv"></div>
+                      </div>
 
                       <div class="clearfix"></div>
                       <button class="btn float-btn flat-btn color-btn" id="submit">Send Message</button>

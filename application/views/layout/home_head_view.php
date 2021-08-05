@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <title>Artific</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval'; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * 'unsafe-inline';">
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
@@ -14,6 +15,8 @@
     <link type="text/css" rel="stylesheet" href="<?php echo base_url() ?>assets/ape/css/plugins.css">
     <link type="text/css" rel="stylesheet" href="<?php echo base_url() ?>assets/ape/css/style.css">
     <link type="text/css" rel="stylesheet" href="<?php echo base_url() ?>assets/ape/css/color.css">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeXOOAbAAAAAO_rwutDmep-mMHrf6QJq1bC7Vdv"></script>
+
     <!--=============== favicons ===============-->
     <link rel="shortcut icon" href="<?php echo base_url() ?>assets/ape/images/favicon.ico">
 </head>
