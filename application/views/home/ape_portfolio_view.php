@@ -61,6 +61,21 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="gallery-item web branding">
+                        <div class="grid-item-holder">
+                            <a href="<?php echo base_url() ?>assets/uploads/portfolio/gcc.png" class="fet_pr-carousel-box-media-zoom   image-popup"><i class="fal fa-search"></i></a>
+                            <img src="<?php echo base_url() ?>assets/uploads/portfolio/gcc.png" alt="">
+                            <div class="box-item hd-box">
+                                <div class=" fl-wrap full-height">
+                                    <div class="hd-box-wrap">
+                                        <h2><a href="https://www.thegoodcowcompany.com/" target="_blank">The Good Cow Company</a></h2>
+                                        <p><a href="javascript:void(0)">Website </a> <a href="javascript:void(0)"> Portfolio</a> <a href="javascript:void(0)"> Product</a> <a href="javascript:void(0)"> Admin Panel</a> <a href="javascript:void(0)"> CMS</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- gallery item end -->
 
@@ -96,7 +111,7 @@
                             <div class="box-item hd-box">
                                 <div class=" fl-wrap full-height">
                                     <div class="hd-box-wrap">
-                                        <h2><a href="javascript:void(0)">Micbac India</a></h2>
+                                        <h2><a href="https://micbacindia.com/" target="_blank">Micbac India</a></h2>
                                         <p><a href="javascript:void(0)">Website </a> <a href="javascript:void(0)"> Portfolio</a> <a href="javascript:void(0)"> Product</a> <a href="javascript:void(0)"> Admin Panel</a> <a href="javascript:void(0)"> CMS</a></p>
                                     </div>
                                 </div>
@@ -159,7 +174,7 @@
                             <div class="box-item hd-box">
                                 <div class=" fl-wrap full-height">
                                     <div class="hd-box-wrap">
-                                        <h2><a href="javascript:void(0)">Yesme</a></h2>
+                                        <h2><a href="http://yesme.in/" target="_blank">Yesme</a></h2>
                                         <p><a href="javascript:void(0)">Website </a> <a href="javascript:void(0)"> Portfolio</a> <a href="javascript:void(0)"> Product</a> <a href="javascript:void(0)"> Admin Panel</a> <a href="javascript:void(0)"> CMS</a></p>
                                     </div>
                                 </div>

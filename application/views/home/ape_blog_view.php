@@ -87,7 +87,7 @@
                                                 <div class="single-slider-wrap slider-carousel-wrap ">
                                                     <div class="single-slider cur_carousel-slider-container fl-wrap"  >
                                                         <?php foreach($this->admin_model->get_all_records('tbl_blog_image','blog_id',$list['blog_id']) as $img): ?>
-                                                        <div class="slick-slide-item"><img src="<?php echo base_url() ?>assets/layouts/layout3/blogimage/<?php echo $img['img_name'] ?>" alt=""></div>
+                                                        <div class="slick-slide-item"><img src="<?php echo base_url() ?>assets/uploads/blog/<?php echo $img['img_name'] ?>" alt=""></div>
                                                         <?php endforeach; ?>
                                                         
                                                     </div>

@@ -7,14 +7,11 @@ class admin_model extends CI_Model {
 	public function checkcredential($username,$password){
 		//encrypt password
 		$password=md5($password);
-		// echo $password."<br/>".$username;
-		// die;
+		//echo $password."<br/>".$username;
 		$this->db->where('username',$username);
 		$this->db->where('password',$password);
 		$this->db->where('status',1);
-		
 		$result=$this->db->get('tbl_adminlogin');
-		
 		if($result->num_rows()==1){
 			// return $result->row(0)->admin_id;
 			$result =array(
